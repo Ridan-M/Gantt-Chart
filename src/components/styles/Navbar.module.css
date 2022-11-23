@@ -1,0 +1,19 @@
+.navbar {
+    width: 390px;
+    height: 100%;
+}
+.marker {
+    width: 100%;
+    height: 7%;
+    background: #F7F8FC;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.marker_title {
+    color: #6D6E85;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+    padding: 20px;
+}
