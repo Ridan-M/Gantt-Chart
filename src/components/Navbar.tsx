@@ -1,16 +1,15 @@
-import React, {createElement, FC} from 'react';
+import React, {FC} from 'react';
 import s from './styles/Navbar.module.css'
-import {useTypedSelector} from "../hooks/useTypedSelector";
-import WorkItem from "./WorkItem";
-import {IDataState} from "../type/chartData";
+import Tasks from "./Tasks";
 
 export interface IPropsTodo {
-    setCountShow(n:number):void;
+    setCountShow(n: number): void;
+
     countShow: number
 }
 
 
-const Navbar:FC <IPropsTodo> = (props) => {
+const Navbar: FC<IPropsTodo> = (props) => {
 
     return (
         <div className={s.navbar_wrapper}>
@@ -18,7 +17,7 @@ const Navbar:FC <IPropsTodo> = (props) => {
                 <span className={s.marker_title}>Work item</span>
             </div>
             <nav className={s.navbar}>
-                <WorkItem {...props}/>
+                <Tasks {...props}/>
             </nav>
         </div>
     );

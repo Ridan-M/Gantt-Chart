@@ -1,9 +1,9 @@
 export interface IDataState {
     id: number;
     title: string;
-    period_start: number;
-    period_end: number;
-    sub: number | IDataState[];
+    period_start: string;
+    period_end: string;
+    sub: number;
 }
 
 export enum dataActionTypes {
@@ -13,7 +13,7 @@ export enum dataActionTypes {
 interface fetchDataSuccessAction {
     type: dataActionTypes.FETCH_DATA_SUCCESS;
     payload: {
-        data: IDataState;
+        data: IDataState[];
     };
 }
 

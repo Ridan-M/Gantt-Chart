@@ -1,6 +1,34 @@
 .chart {
     width: 1350px;
     background: url("../../image/timeline.jpg") no-repeat 0 0;
+    padding-top: 100px;
+    background-size: 133%;
+    position: relative;
+}
+.chart::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.2;
+    width: 20px;
+    background: linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);}
 
-    background-size: 115%;
+.chart_item {
+    height: 24px;
+    margin-bottom: 22px;
+    position: relative;
+    left: -22px;
+    top: 5px;
+    border-radius: 4px;
+    background: #FFF2E0;
+    border: 1px solid #FFA530;
+}
+
+.chart_title {
+    position: absolute;
+    top: -5px;
+    right: -200px;
+
 }
