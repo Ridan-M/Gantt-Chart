@@ -1,8 +1,12 @@
-import React from 'react';
+import React, {FC} from 'react';
 import s from './styles/Chart.module.css'
+import {useTypedSelector} from "../hooks/useTypedSelector";
 
 
-const Chart = () => {
+const Chart: FC<{countShow: number}> = ({countShow}) => {
+    const state = useTypedSelector(state => state.data)
+
+
     return (
         <div className={s.chart}>
             

@@ -18,3 +18,4 @@ export const createArray = (chart: IDataState) => {
     createArr(chart)
     if(arr) return arr
 }
+export {}

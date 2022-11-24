@@ -13,7 +13,7 @@ export enum dataActionTypes {
 interface fetchDataSuccessAction {
     type: dataActionTypes.FETCH_DATA_SUCCESS;
     payload: {
-        data: IDataState[];
+        data: IDataState;
     };
 }
 
