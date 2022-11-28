@@ -1,6 +1,8 @@
 import React, {createElement, FC} from 'react';
 import s from './styles/Chart.module.css'
 import {useTypedSelector} from "../hooks/useTypedSelector";
+import timeline from "../image/timeline.jpg";
+
 
 type chartsItem = {
     title: string;
